@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');    
 
 *{
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     box-sizing: border-box;
 }
 body{
@@ -28,7 +28,7 @@ h1{
 .task{
     font-size: 1rem;
 }
-#input-fields{
+#input-fields-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,26 +46,34 @@ h1{
     align-items: center;
     gap: 1rem;
 }
+.task{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
 #list-container i{
     font-size: 1.5rem;
 }
-#list-form{
-    margin-top: 2rem;
+#form-container{
+    margin-top: 0rem;
     height: 2rem;
     width: 100%;
    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
-#list-form input{
+#form-container input{
     background-color: black;
     color: yellow;
     font-family: inherit;
     height: 100%;
 }
-#list-form button{
-    font-family: ;
+#form-container button{
+    margin: 1rem 0;
     background-color: yellowgreen;
     height: 100%;
     font-family: inherit;
@@ -82,4 +90,8 @@ h1{
 }
 .done{
     text-decoration: line-through;
+    color: red;
+}
+#form-container .red-button{
+    background-color: red !important;
 }
